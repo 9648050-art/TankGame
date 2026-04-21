@@ -30,7 +30,8 @@ class Tank {
       image(iTankD, x, y);
     }
   }
-  void move(char idir) {
+  void move(char dir) {
+    idir = dir;
     if (dir == 'w') {
       idir = 'w';
       y = y - speed;

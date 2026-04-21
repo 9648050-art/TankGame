@@ -1,6 +1,6 @@
 class Obstacle {
   int x, y, w, h, speed, health;
-  //PImage obst1;
+  PImage obst1;
 
   // constructor
   Obstacle(int x, int y) {
@@ -10,12 +10,13 @@ class Obstacle {
     h = 100;
     speed = 2;
     health = 100;
+    obst1 = loadImage("obj.png");
   }
 
   void display() {
-    rectMode(CENTER);
-    fill(127);
-    rect(x, y, w, h);
+    imageMode(CENTER);
+    image(obst1,x,y);
+    
   }
 
 
